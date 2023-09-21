@@ -6,7 +6,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
 // Imagenes
-
+const imagemin = require('gulp-imagemin');
 
 function css(done) {
     src('src/scss/app.scss')
@@ -19,6 +19,7 @@ function css(done) {
 
 function imagenes() {
     return src('src/img/**/*')
+        .pipe(imagemin({ optimizationlevel: 3 }))
         .pipe(dest('build/img'));
 }
 
