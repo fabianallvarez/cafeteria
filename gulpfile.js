@@ -1,7 +1,12 @@
 const { src, dest, watch, series, parallel } = require('gulp');
+
+// CSS y SASS
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+
+// Imagenes
+
 
 function css(done) {
     src('src/scss/app.scss')
