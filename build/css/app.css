@@ -404,6 +404,11 @@ h3 {
   padding: 5rem 0;
   position: relative;
 }
+@media (min-width: 768px) {
+  .header {
+    min-height: 70rem;
+  }
+}
 .header::before {
   content: "";
   background-color: #000000;
@@ -416,6 +421,17 @@ h3 {
 }
 .header .contenido-header {
   position: relative;
+}
+.header .contenido-header h1 {
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header h1 {
+    margin: 10rem;
+  }
 }
 
 .header-inicio {
