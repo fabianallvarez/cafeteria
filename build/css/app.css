@@ -796,3 +796,39 @@ h3 {
   border-left: 0.5rem solid #5E311E;
   font-size: 2rem;
 }
+
+.proceso-cafe {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.proceso-cafe:last-of-type {
+  margin-top: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: -1;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  margin: 0;
+  text-align: left;
+  color: #5E311E;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #C39633;
+}
