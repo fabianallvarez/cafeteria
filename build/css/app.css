@@ -488,6 +488,10 @@ h3 {
   background-image: url(../img/header_nosotros.jpg);
 }
 
+.header-proceso {
+  background-image: url(../img/header_proceso.jpg);
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
