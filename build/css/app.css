@@ -492,6 +492,10 @@ h3 {
   background-image: url(../img/header_proceso.jpg);
 }
 
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
